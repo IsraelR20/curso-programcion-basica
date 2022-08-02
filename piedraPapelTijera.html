@@ -11,19 +11,46 @@
   <script>
     // 1=piedra, 2=papel, 3=tijera
     let jugador=0;
-    let pc=2;
+    let pc=3;
     jugador=prompt("Elige 1=Piedra, 2=papel, 3=Tijera");
     if (jugador==1){
-      alert("Elegiste Piedra");
+      alert("Elegiste Piedra 🪨");
     }
     else if (jugador==2){
-      alert("Elegiste Papel");
+      alert("Elegiste Papel 📄");
     }
     else if (jugador==3){
-      alert("Elegiste Tijera");
+      alert("Elegiste Tijera ✂️");
     }
     else {
       alert("Elegiste un numero extraño");
+    }
+
+    if (pc==1){
+      alert("Pc elige 🪨");
+    }
+    else if (pc==2){
+      alert("Pc elige 📄");
+    }
+    else if (pc==3){
+      alert("Pc elige ✂️");
+    }
+
+    //Combate
+    if (pc==jugador){
+      alert("EMPATE 😥")
+    }
+    else if (jugador==1 && pc==3){
+      alert("GANASTE")
+    }
+    else if (jugador==2 && pc ==1){
+      alert("GANASTE")
+    }
+    else if (jugador==3 && pc==2){
+      alert("GANASTE")
+    }
+    else {
+      alert("Para la otra sera")
     }
   </script>
 </body>
